@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS variables (theme values) */
+@layer base {
+  :root {
+    --color-primary: #f84565;
+    --color-primary-dull: #D63854;
+  }
+
+  * {
+    font-family: "Outfit", sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: #787777 #1e1e1e;
+  }
+
+  body {
+    margin: 0;
+    height: 100vh;
+    color: white;
+    background: radial-gradient(circle at top, #14161c, #07080b);
+  }
+}
+
+
+.nav-button:hover {
+  background-color: #D63870;
+}
+
+.change:hover {
+  background-color: #ee8296 ;
+
+}
+
+.no-scrollbar{
+  scrollbar-width: none;
+}
+.remove-border{
+  background-color: #a0727c23;
+  border: 1px solid rgba(248, 69, 101, 0.2);
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
