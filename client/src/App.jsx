@@ -22,23 +22,7 @@ function App() {
 
   const isAdminRoute = useLocation().pathname.startsWith('/admin')
 
-  useEffect( ()=>{
-    // fetch('http://127.0.0.1:8000/')
-    // .then(res=>res.json())
-    // .then(data=>console.log(data))
-    async function getData() {
-      
-    
-    try{
-      const res = await axios.get('http://127.0.0.1:8000/')
-      console.log('data',res.data)
-    }catch(error){
-      console.log("error",error)
-    }
-  }
-  getData();
-  },[])
-
+  
 
   return (
     <>
